@@ -63,72 +63,17 @@ nav {
     cursor: pointer;
 }
 
-.submenu {
-    left: 0;
-    top: 73px;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-}
-
-#submenu {
-    display: inherit;
-}
-
-.peach {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #d8c3a4;
-    z-index: 98;
-    bottom: calc(100% + 73px);
-    transition-delay: 0.7s;
-    transition-duration: 2s;
-    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.black {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #101010;
-    z-index: 99;
-    bottom: calc(100% + 73px);
-    transition-duration: 1.5s;
-}
-
-.peach.open {
-    transition-duration: 1.5s;
-    bottom: 0%;
-}
-
-.black.open {
-    transition-delay: 1.3s;
-    transition-duration: 2s;
-    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-    bottom: 0%;
-}
-
-.expanded-menu {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    line-height: 40px;
-}
-
 .menu-content {
-    display: block;
-    text-align: center;
+    display: inline;
     position: relative;
-    top: calc(50% - 73px);
-    transform: translateY(calc(-50% + 73px));
 }
 
 .socials {
-    position: relative;
-    display: block;
-    text-align: center;
+    display: inline;
+}
+
+.fa {
+    padding: 2px;
 }
 
 .main-ani video {
@@ -136,14 +81,6 @@ nav {
     width: 100%;
     height: 100%;
     object-fit: fill;
-}
-
-.top-ani {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    z-index: 101;  
 }
 
 .grid-1 {
